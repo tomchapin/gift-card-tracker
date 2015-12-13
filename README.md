@@ -1,5 +1,28 @@
-Gift Card Tracker
+GiftCard Tracker
 ================
+
+Objective:
+
+Create a rails app that allows you to add gift cards and track their balance. 
+ 
+
+1. Add/remove a gift card 
+
+  - Fields to store: issuing company(Home Depot, BestBuy), card_number, balance  
+
+  - Use credit card numbers as the card numbers 
+
+  - Validate card numbers are valid credit card numbers
+
+2. Show info for each card 
+
+3. Credit/Debit from each gift card balance 
+
+  - Allow to add and remove from balance of each card
+
+  - Do not allow a debit for an amount that would puts the balance negative
+  
+
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -7,6 +30,7 @@ This application was generated with the [rails_apps_composer](https://github.com
 provided by the [RailsApps Project](http://railsapps.github.io/).
 
 Rails Composer is supported by developers who purchase our RailsApps tutorials.
+
 
 Problems? Issues?
 -----------
