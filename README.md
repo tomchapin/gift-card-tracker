@@ -1,5 +1,5 @@
-GiftCard Tracker
-================
+Gift Card Tracker
+=================
 
 Objective:
 
@@ -33,7 +33,7 @@ Rails Composer is supported by developers who purchase our RailsApps tutorials.
 
 
 Problems? Issues?
------------
+-----------------
 
 Need help? Ask on Stack Overflow with the tag 'railsapps.'
 
