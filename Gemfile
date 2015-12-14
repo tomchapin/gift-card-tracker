@@ -16,6 +16,8 @@ gem 'simple_form'
 
 gem 'money-rails', '~> 1.4', '>= 1.4.1'
 
+gem 'activeadmin', '~> 1.0.0.pre2'
+
 group :production do
   gem 'rails_12factor'
 end
@@ -37,7 +39,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'pry'
+  gem 'pry-rails'
   gem 'byebug'
   gem 'factory_girl_rails'
   gem 'faker'

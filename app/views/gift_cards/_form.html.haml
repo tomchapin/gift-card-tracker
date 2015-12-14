@@ -1,0 +1,9 @@
+= simple_form_for(@gift_card) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :card_number
+    = f.association :card_issuer
+
+  .form-actions
+    = f.button :submit

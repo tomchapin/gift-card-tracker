@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Card number:
+  = @gift_card.card_number
+%p
+  %b Card issuer:
+  = @gift_card.card_issuer
+
+= link_to 'Edit', edit_gift_card_path(@gift_card)
+\|
+= link_to 'Back', gift_cards_path
