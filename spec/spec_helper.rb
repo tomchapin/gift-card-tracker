@@ -19,11 +19,11 @@
 
 # Enable SimpleCov
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start 'rails'
 
 # Enable Coveralls
 require 'coveralls'
-Coveralls.wear!
+Coveralls.wear! 'rails'
 
 # Rspec configuration
 RSpec.configure do |config|
