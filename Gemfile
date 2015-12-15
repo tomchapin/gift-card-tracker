@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+
 ruby '2.2.3'
 gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
@@ -16,7 +17,7 @@ gem 'simple_form'
 
 gem 'money-rails', '~> 1.4', '>= 1.4.1'
 
-gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'credit_card_validations', '~> 3.1'
 
 group :production do
   gem 'rails_12factor'
@@ -47,6 +48,8 @@ group :development, :test do
 end
 
 group :test do
+  gem 'simplecov', :require => false
+  gem 'shoulda-matchers', '~> 3.0', require: false
   gem 'capybara'
   gem 'database_cleaner'
   gem 'launchy'
