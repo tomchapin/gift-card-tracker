@@ -1,0 +1,5 @@
+# This file is used for automated testing on Travis CI
+test:
+  adapter: postgresql
+  database: travis_ci_test
+  username: postgres

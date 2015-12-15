@@ -33,17 +33,19 @@ This application requires:
 Getting Started
 ---------------
 
-1. Create a local PostgreSQL user: "```createuser gift-card-tracker --superuser```"
+1. Copy the "config/database.example.yml" file to "config/database.yml"
 
-2. Run "```bundle install```"
+2. Create a local PostgreSQL user: "```createuser gift-card-tracker --superuser```"
 
-3. Run "```rake db:create db:migrate db:seed```" to set up the database.
+3. Run "```bundle install```"
+
+4. Run "```rake db:create db:migrate db:seed```" to set up the database.
 
    **IMPORTANT: Don't forget to seed the database so you have all of the gift card issuers in the database!**
 
-4. Run "```rails s```" to start the rails server
+5. Run "```rails s```" to start the rails server
 
-5. Browse to "http://localhost:3000" in your web browser
+6. Browse to "http://localhost:3000" in your web browser
 
 
 Running Tests
