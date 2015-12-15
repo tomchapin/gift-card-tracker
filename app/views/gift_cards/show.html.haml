@@ -1,4 +1,4 @@
-%br
+%h1 Gift Card
 
 %p
   %b Card Issuer:
@@ -10,6 +10,7 @@
 
 = link_to 'Edit Card Info', edit_gift_card_path(@gift_card), class: 'btn btn-default'
 
+%br
 %br
 
 %h1 Transaction History
@@ -33,7 +34,6 @@
       %td
         %strong= @gift_card.balance.format
 
-
 %h3 Add or Subtract from Balance
 
 = form_for([@gift_card, @gift_card.transactions.build]) do |f|
@@ -43,3 +43,8 @@
   %p
     = f.submit 'Log Transaction', class: 'btn btn-default'
 
+
+%br
+%br
+
+= link_to 'Back to Gift Cards', root_path
