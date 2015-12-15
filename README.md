@@ -4,6 +4,10 @@ Gift Card Tracker
 [![Build Status](https://travis-ci.org/tomchapin/gift-card-tracker.svg?branch=master)](https://travis-ci.org/tomchapin/gift-card-tracker)
 [![Coverage Status](https://coveralls.io/repos/tomchapin/gift-card-tracker/badge.svg?branch=master&service=github)](https://coveralls.io/github/tomchapin/gift-card-tracker?branch=master)
 
+Screen Shot
+-----------
+![Screenshot]\(http://i.imgur.com/96q3WtC.png) 
+
 Project Objective:
 ----------
 
