@@ -1,23 +1,25 @@
-%h1 Listing gift_cards
+%h1 Manage Gift Cards
 
-%table
+%table.table
   %thead
     %tr
-      %th Card number
-      %th Card issuer
-      %th
-      %th
-      %th
+      %th Card Issuer
+      %th Card Number
+      %th Current Balance
+      %th Actions
 
   %tbody
     - @gift_cards.each do |gift_card|
       %tr
+        %td= gift_card.card_issuer.name
         %td= gift_card.card_number
-        %td= gift_card.card_issuer
-        %td= link_to 'Show', gift_card
-        %td= link_to 'Edit', edit_gift_card_path(gift_card)
-        %td= link_to 'Destroy', gift_card, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= gift_card.balance.format
+        %td
+          .btn-group
+            = link_to 'Manage Balance', gift_card, class: 'btn btn-default'
+            = link_to 'Edit Card Info', edit_gift_card_path(gift_card), class: 'btn btn-default'
+            = link_to 'Remove Card', gift_card, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
 
 %br
 
-= link_to 'New Gift card', new_gift_card_path
+= link_to 'New Gift Card', new_gift_card_path, class: 'btn btn-default'

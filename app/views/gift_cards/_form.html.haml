@@ -2,8 +2,8 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :card_number
     = f.association :card_issuer
+    = f.input :card_number
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, 'Save Gift Card Info'

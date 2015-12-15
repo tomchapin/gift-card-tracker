@@ -1,12 +1,45 @@
-%p#notice= notice
+%br
 
 %p
-  %b Card number:
+  %b Card Issuer:
+  = @gift_card.card_issuer.name
+
+%p
+  %b Card Number:
   = @gift_card.card_number
-%p
-  %b Card issuer:
-  = @gift_card.card_issuer
 
-= link_to 'Edit', edit_gift_card_path(@gift_card)
-\|
-= link_to 'Back', gift_cards_path
+= link_to 'Edit Card Info', edit_gift_card_path(@gift_card), class: 'btn btn-default'
+
+%br
+
+%h1 Transaction History
+
+%table.table
+  %thead
+    %tr
+      %th Date/Time
+      %th Amount
+
+  %tbody
+    - @gift_card.transactions.each do |transaction|
+      %tr
+        %td= transaction.created_at
+        %td= transaction.amount.format
+
+  %tfoot
+    %tr
+      %td
+        %strong Current Balance
+      %td
+        %strong= @gift_card.balance.format
+
+
+%h3 Add or Subtract from Balance
+
+= form_for([@gift_card, @gift_card.transactions.build]) do |f|
+  %p
+    = f.label :amount, "Amount +/- $"
+    = f.number_field :amount, step: 0.01
+  %p
+    = f.submit 'Log Transaction', class: 'btn btn-default'
+
