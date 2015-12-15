@@ -6,7 +6,7 @@ Gift Card Tracker
 
 Screen Shot
 -----------
-![Screenshot]\(http://i.imgur.com/96q3WtC.png) 
+![Screenshot](http://i.imgur.com/96q3WtC.png) 
 
 Project Objective:
 ----------
