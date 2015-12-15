@@ -1,6 +1,8 @@
 Gift Card Tracker
 =================
 
+[![Coverage Status](https://coveralls.io/repos/tomchapin/gift-card-tracker/badge.svg?branch=master&service=github)](https://coveralls.io/github/tomchapin/gift-card-tracker?branch=master)
+
 Project Objective:
 ----------
 
